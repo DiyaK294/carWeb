@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+}
+
+body {
+    background: linear-gradient(grey,rgb(210, 204, 204),grey);
+}
+
+header {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 5px 5px 7px lightgrey;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: grey;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav>a {
+    font-size: 23px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+nav>a:hover {
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+main {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+main>a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    cursor: pointer;
+    color: black;
+}
+
+#addCarForm {
+    width: 500px;
+    box-shadow: 5px 5px 7px lightgrey;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#addCarForm>input {
+    height: 50px;
+    outline: none;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+#addCarForm>textarea {
+    height: 100px;
+    outline: none;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+#addCarForm>button {
+    height: 50px;
+}
+
+.cars-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 2;
+    padding: 10px;
+}
+
+.car-card {
+    display: flex;
+    z-index: 1;
+    padding: 10px;
+    border-top: 5px solid purple;
+    border-right: 10px solid crimson;
+    border-bottom: 6px solid teal;
+    border-left: 7px solid orangered;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    gap: 10px;
+}
+
+.car-card>img {
+    width: 30vw;
+    height: 16vw;
+    border-radius: 7px;
+}
+
+.car-card>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.car-card>div>div>button {
+    padding: 10px 13px;
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+ 
+#deleteBtn {
+    background-color: red;
+    color: white;
+}
+
+#deleteBtn:hover {
+    background-color: crimson;
+    border: 1px solid white;
+}
+
+#editBtn:hover {
+    background-color:yellow;
+    border: 1px solid lightgrey;
+}
+
+#editCarForm {
+    width: 500px;
+    box-shadow: 5px 5px 7px lightgrey;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#editCarForm>input {
+    height: 50px;
+    outline: none;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+#editCarForm>textarea {
+    height: 100px;
+    outline: none;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+#editCarForm>button {
+    height: 50px;
+}
+
+.no-car-mess {
+    display: inline-block;
+    margin: 200px auto;
+    font-size: 30px;
+}
